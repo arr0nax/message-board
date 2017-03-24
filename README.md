@@ -1,52 +1,31 @@
-# message-board
+##Planning
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+1. Config
+  * Firebase - store questions and answers
+  * Bower/bootstrap - aid in styling
 
-## Prerequisites
+2. Specs
+  * collect and store questions
+  * display questions on front page
+  * display individual questions in expanded format on their own page
+  * collect and store answers to specific questions
+  * display answers to questions on question page
+  * delete questions on confirmation
+  * delete answers on confirmation
 
-You will need the following things properly installed on your computer.
+3. Integrations
+  * Basic ember setup
+  * navbar for all pages that connects to home
+  * Routes for home (index.hbs) and questions (question.hbs)
+  * Model for questions
+  * Model for answers
+  * component to display only questions and authors
+  * component to display answers to specific questions
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with NPM)
-* [Bower](https://bower.io/)
-* [Ember CLI](https://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+4. UX/UI
+  * Format questions to appear clearly, as well as identify the author
+  * clean simple styling
 
-## Installation
-
-* `git clone <repository-url>` this repository
-* `cd message-board`
-* `npm install`
-* `bower install`
-
-## Running / Development
-
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+5. Polish
+  * perhaps add login feature and automatically assign authorship to person logged in
+  * allow logged in users to delete their own questions

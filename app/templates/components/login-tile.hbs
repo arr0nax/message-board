@@ -1,5 +1,5 @@
 <h2>welcome back</h2>
-  <form>
+  <form class="login">
     <div class="form-group">
       <label for="user">username</label>
       {{input value=user id="user"}}
@@ -8,6 +8,6 @@
       <label for="password">password</label>
       {{input value=password id="password"}}
     </div>
-    <button {{action 'login' model}}>Answer</button>
+    <button {{action 'login'}}>Answer</button>
 
   </form>

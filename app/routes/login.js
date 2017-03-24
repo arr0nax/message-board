@@ -6,8 +6,9 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    login(params){
+    login(params,model){
       console.log(params);
+      console.log(model);
     }
   }
 });

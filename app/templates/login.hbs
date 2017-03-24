@@ -1,1 +1,6 @@
-{{login-tile login="login" params=params}}
+<h1><i>we don't support logging in yet, sorry about that</i></h1>
+
+{{login-tile login="login" params=params model=model}}
+{{#each model as |user|}}
+  {{user.name}}
+{{/each}}

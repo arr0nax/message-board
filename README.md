@@ -12,6 +12,7 @@
   * display answers to questions on question page
   * delete questions on confirmation
   * delete answers on confirmation
+  * update questions
 
 3. Integrations
   * Basic ember setup

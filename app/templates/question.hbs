@@ -1,12 +1,23 @@
-<h2>{{model.author}}: </h2>
-<h1>{{model.question}}</h1>
-<h3>{{model.body}}</h3>
+<div class="bigQuestion">
+  <h2 class="author">{{model.author}} asks:</h2>
+  <h1 class="question">{{model.question}}</h1>
+  <p class="body">{{model.body}}</p>
 
-{{edit-question update='update' question=model}}
+    {{edit-question update='update' question=model}}
 
-<h1>answers</h1>
-{{#each model.answers as |answer|}}
+</div>
+
+<div class="row">
+
+<div class="col-md-7">
+  <h1>answers</h1>
+  {{#each model.answers as |answer|}}
   {{answer-tile answer=answer}}
-{{/each}}
+  {{/each}}
 
-{{new-answer answer='answer' question=model}}
+</div>
+<div class="col-md-5">
+
+  {{new-answer answer='answer' question=model}}
+</div>
+</div>

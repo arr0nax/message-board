@@ -2,6 +2,8 @@
 <h1>{{model.question}}</h1>
 <h3>{{model.body}}</h3>
 
+{{edit-question update='update' question=model}}
+
 <h1>answers</h1>
 {{#each model.answers as |answer|}}
   {{answer-tile answer=answer}}

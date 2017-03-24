@@ -12,6 +12,14 @@ return this.store.findRecord('question', params.question_id);
       newAnswer.save().then(function() {
         return question.save();
       });
+    },
+    update(question, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          question.set(key,params[key]);
+        }
+      });
+      question.save();
     }
   }
 });

@@ -1,0 +1,19 @@
+{{#if showForm}}
+<form>
+  <div class="form-group">
+    <label for="author">author</label>
+    {{input value=author id="newauthor" placeholder=question.author}}
+  </div>
+  <div class="form-group">
+    <label for="question">question</label>
+    {{input value=newquestion id="newquestion" placeholder=question.question}}
+  </div>
+  <div class="form-group">
+    <label for="body">body</label>
+    {{input value=body id="newbody" placeholder=question.body}}
+  </div>
+  <button {{action 'editQuestion' question}}>Edit</button>
+</form>
+{{else}}
+  <button {{action "showForm"}}>Edit this Question</button>
+{{/if}}

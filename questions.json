@@ -12,5 +12,9 @@
     "author": "jenna",
     "answer": "because",
     "body": "no one knows why the sky is blue or the grass is green, it just is that way"
+  }],
+  "users": [{
+    "user": "clayton",
+    "password": "password"
   }]
 }

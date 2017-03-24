@@ -1,3 +1,5 @@
+
+
 <h1 class="shrug">¯\_(ツ)_/¯</h1>
 <h1 class='welcome'>welcome to shrug</h1>
 <div class="row">
@@ -8,7 +10,7 @@
 </div>
 <div class="col-md-7">
 
-{{#each model as |question|}}
+{{#each model.questions as |question|}}
   {{question-tile question=question}}
 {{/each}}
 </div>

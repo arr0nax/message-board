@@ -2,7 +2,7 @@
 <form>
   <div class="form-group">
     <label for="author">author</label>
-    {{input value=author id="newauthor" placeholder=question.author}}
+    {{input value=newauthor id="newauthor" placeholder=question.author}}
   </div>
   <div class="form-group">
     <label for="question">question</label>
@@ -10,7 +10,7 @@
   </div>
   <div class="form-group">
     <label for="body">body</label>
-    {{input value=body id="newbody" placeholder=question.body}}
+    {{input value=newbody id="newbody" placeholder=question.body}}
   </div>
   <button {{action 'editQuestion' question}}>Edit</button>
 </form>
